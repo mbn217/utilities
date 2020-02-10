@@ -96,16 +96,6 @@ public class JavaUtils {
 		return result.toString();
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 04/23/2018
-	 * @Purpose This method will compare two integer arrays
-	 * @param array1
-	 *            -> enter first array of type integer
-	 * @param array2
-	 *            -> enter second array of type integer
-	 * @return method will return true if both arrays matches and false if not
-	 */
 	public static boolean compareArrays(int[] array1, int[] array2) {
 		log.info("Comparing two integer arrays");
 		boolean isMatch = true;
@@ -124,16 +114,6 @@ public class JavaUtils {
 		return isMatch;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 04/20/2018
-	 * @Purpose This method will generate a random integer
-	 * @param min
-	 *            -> the minimum number of integer you would like to generate
-	 * @param max
-	 *            -> the maximum number of integer you would like to generate
-	 * @return method will return an integer random number
-	 */
 	public static int getRandomNumberBetween(int min, int max) {
 		log.info("Generating a random number");
 		Random foo = new Random();
@@ -146,14 +126,6 @@ public class JavaUtils {
 
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 04/29/2018
-	 * @Purpose This method will generate a random integer
-	 * @param length
-	 *            --> the length of the random string we want to generate
-	 * @return method will return a Random String
-	 */
 	public static String generateRandomString(int length) {
 		log.info("Generating a random String");
 		StringBuilder str = new StringBuilder(RandomStringUtils.randomAlphabetic(length));
@@ -166,40 +138,17 @@ public class JavaUtils {
 		return str.toString();
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 04/29/2018
-	 * @Purpose This method will generate a random phone number of 10 degits per
-	 *          default
-	 * @param N/A
-	 * @return method will return an integer of a random phone number
-	 */
+
 	public static String generateRandomPhoneNumber() {
 		log.info("Generating a random phone number");
 		return RandomStringUtils.randomNumeric(10);
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/09/2018
-	 * @Purpose This method will generate a random integer
-	 * @param length
-	 *            --> the length of the random number we want to generate
-	 * @return method will return a String of random number
-	 */
 	public static String generateRandomNumber(int length) {
 		log.info("Generating a random number");
 		return RandomStringUtils.randomNumeric(length);
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/09/2018
-	 * @Purpose This method will generate a Alphanumeric String
-	 * @param length
-	 *            --> the length of the random Alphanumeric we want to generate
-	 * @return method will return an Alphanumeric random String
-	 */
 	public static String generateRandomAlphaNumeric(int length) {
 		log.info("Generating an Alphanumeric String");
 		StringBuilder str = new StringBuilder(RandomStringUtils.randomAlphanumeric(length));
@@ -213,17 +162,7 @@ public class JavaUtils {
 
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/10/2018
-	 * @Purpose This method will generate a random String
-	 * @param length
-	 *            --> the length of the random Alphanumeric we want to generate
-	 * @param allowdSplChrs
-	 *            -> the special characters that are allowed in the string
-	 * @return method will return an integer random String of Alphabetic numeric and
-	 *         special character values
-	 */
+
 	public static String generateRandomStringWithAllowedSplChars(int length, String allowdSplChrs) {
 		log.info("Generating a Random String");
 		String allowedChars = "abcdefghijklmnopqrstuvwxyz" + "1234567890" + allowdSplChrs
@@ -238,14 +177,7 @@ public class JavaUtils {
 		return str1.toString();
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/10/2018
-	 * @Purpose This method will generate a random integer
-	 * @param length
-	 *            --> the length of the random emails we want to generate
-	 * @return method will return a random email String
-	 */
+
 	public static String generateRandomEmail(int length) {
 		log.info("Generating a Random email String");
 		String allowedChars = "abcdefghijklmnopqrstuvwxyz" + "1234567890" + "_-.";
@@ -255,14 +187,7 @@ public class JavaUtils {
 		return email;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 04/20/2018
-	 * @Purpose This method will generate a random integer
-	 * @param length
-	 *            --> the length of the random url we want to generate
-	 * @return method will return a string of a random URL
-	 */
+
 	public static String generateRandomUrl(int length) {
 		log.info("Generating a Random URL String");
 		String allowedChars = "abcdefghijklmnopqrstuvwxyz" + "1234567890" + "-.";
@@ -272,15 +197,7 @@ public class JavaUtils {
 		return url;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 04/20/2018
-	 * @Purpose This method will return only the numeric value from a string of
-	 *          chars and integers
-	 * @param str
-	 *            --> the string value
-	 * @return method will return a string of integer
-	 */
+
 	public static String getOnlyDigits(String str) {
 		log.info("Getting the degits only from " + str);
 		String result = "";
@@ -293,15 +210,7 @@ public class JavaUtils {
 		return result;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/23/2018
-	 * @Purpose This method will Removes leading and flanking quotation if found.
-	 *          Flanking white spaces are removed as well.
-	 * @param value
-	 *            --> to truncate quotations from
-	 * @return value without quotation signs, if there were any around it.
-	 */
+
 	public static String removeQuotation(final String value) {
 		log.info("Removing quotations from " + value);
 		if (value == null) {
@@ -319,16 +228,6 @@ public class JavaUtils {
 		return trimmedValue;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/23/2018
-	 * @Purpose This method will Create a regular expression, which is going to
-	 *          match a specific character. Flanking white spaces are removed as
-	 *          well.
-	 * @param ch
-	 *            --> character for regular expression.
-	 * @return regular expression matching the character
-	 */
 	public static String getCharRegexp(final char ch) {
 		log.info("Getting character regular expression ");
 		String regex = "";
@@ -342,34 +241,12 @@ public class JavaUtils {
 		return regex;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/23/2018
-	 * @Purpose This method will Convert milliseconds to seconds. Flanking white
-	 *          spaces are removed as well.
-	 * @param milliseconds
-	 *            --> time in milliseconds
-	 * @return time in seconds
-	 */
+
 	public static Long getTimeInSeconds(final Long milliseconds) {
 		log.info("Converting milliseconds to seconds");
 		return milliseconds / MILLISECONDS_IN_SECOND;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/23/2018
-	 * @Purpose This method will store the image in specified format.
-	 * @param outputfilePath
-	 *            --> where to store the file
-	 * @param srcFile
-	 *            --> PNG file as byte array
-	 * @param format
-	 *            --> supported format
-	 * @return the resulting file reference
-	 * @throws IOException
-	 *             --> if there were problems writing the file
-	 */
 	public static File saveAsFormat(final String outputfilePath, final byte[] srcFile, final String format)
 			throws IOException {
 		log.info("Saving a file in a specific format");
@@ -383,14 +260,7 @@ public class JavaUtils {
 		return resultFile;
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 05/23/2018
-	 * @Purpose This method will wait n time in seconds
-	 * @param timeToWaitInSeconds
-	 *            --> the time to wait in seconds
-	 * @return N/A
-	 */
+
 	public static void javaWait(int timeToWaitInSeconds) {
 		log.info("waiting " + timeToWaitInSeconds + " seconds");
 		try {
@@ -400,40 +270,18 @@ public class JavaUtils {
 		}
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 06/19/2018
-	 * @Purpose This function gets current Time Stamp as String
-	 * @param N/A
-	 * @return -Time Stamp as String
-	 */
 	public static String getTimeStamp() {
 		log.info("Getting current time");
 		java.util.Date date = new java.util.Date();
 		return new Timestamp(date.getTime()).toString();
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 06/19/2018
-	 * @Purpose This method Kills the process by the name you specify to it
-	 * @param ProcessName
-	 *            the process we are trying to close (ex:firefox)
-	 * @return N/A
-	 */
+
 	public static void killProcess(String processName) throws IOException {
 		log.info("Killing process : " + processName);
 		Runtime.getRuntime().exec("taskkill /f /im " + processName + ".exe");
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 06/19/2018
-	 * @Purpose This method will Clear the temp folder and gets the temp folder
-	 *          property from the System property itself
-	 * @param N/A
-	 * @return N/A
-	 */
 	public static void clearTempFolder() throws IOException {
 		log.info("Clearing Temp folder");
 		try {
@@ -448,19 +296,7 @@ public class JavaUtils {
 		}
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 07/11/2018
-	 * @Purpose This method will take an array of type string , iterate through the
-	 *          array and replace oldValue with newValue
-	 * @param items[]
-	 *            the array of type String
-	 * @param oldValue
-	 *            the old element to replace
-	 * @param newValue
-	 *            the new element to replace with
-	 * @return N/A
-	 */
+
 	public static void replaceElementInArrayOfString(String[] items, String oldValue, String newValue) {
 		log.info("Replacing element in an array");
 		System.out.println("********Printing old array*********");
@@ -472,15 +308,7 @@ public class JavaUtils {
 		System.out.println(Arrays.toString(items));
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 07/23/2018
-	 * @Purpose This method will take an arrayList of type String and convert it
-	 *          into a regular array
-	 * @param list
-	 *            the arrayList of Strings the you want to convert
-	 * @return array
-	 */
+
 	public static String[] arrayListToArray(List<String> list) {
 		list = new ArrayList<String>();
 		String[] array = list.toArray(new String[list.size()]);
@@ -488,15 +316,7 @@ public class JavaUtils {
 
 	}
 
-	/**
-	 * @author Mohamed.Nheri
-	 * @Date 07/23/2018
-	 * @Purpose This method will take an array of type string , and convert it into
-	 *          an arraylist
-	 * @param array[]
-	 *            the array of type String
-	 * @return list
-	 */
+
 	public static List<String> arrayToArrayList(String[] array) {
 		List<String> list = new ArrayList<String>(Arrays.asList(array));
 		return list;

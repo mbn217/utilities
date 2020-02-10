@@ -14,19 +14,10 @@ import java.util.zip.ZipOutputStream;
 import org.apache.log4j.Logger;
 
 
-/**
- * @author Mohamed.Nheri
- * @Date 06/20/2018
- * @Purpose This class is used to zip your directory.
- */
 public class ZipUtils {
 	private  static Logger log = Logger.getLogger(ZipUtils.class);
 
-	/**
-	 * This function adds all files inside the directory to your existing list of files
-	 * @param dir -Enter the directory from which you want to list files
-	 * @param fileList -pass your existing list where we will append new identified files
-     */
+
 	public void getAllFiles(File dir, List<File> fileList) {
 		try {
 			File[] files = dir.listFiles();
@@ -44,12 +35,6 @@ public class ZipUtils {
 		}
 	}
 
-	/**
-	 * This function helps you create zip file from list of files
-	 * @param directoryToZip -Enter location of the directory you want to zip
-	 * @param fileList -Enter list of files you want to zip from that directory
-     * @return -Returns location of zip file.
-     */
 	public String writeZipFile(File directoryToZip, List<File> fileList) {
 		String zipFileName =
 				directoryToZip.getName() + "_" + UUID.randomUUID() + ".zip";
