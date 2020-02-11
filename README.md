@@ -1,2 +1,2 @@
-[![Inline docs](http://inch-ci.org/github/{ORG-or-USERNAME}/{REPO-NAME}.svg?branch=master)](http://inch-ci.org/github/{ORG-or-USERNAME}/{REPO-NAME})
+https://img.shields.io/badge/version-1.0.1-blue
 
