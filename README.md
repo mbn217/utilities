@@ -1,1 +1,1 @@
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.mbn217/utilities/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.mbn217/utilities)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.mbn217/MyUtilities.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.mbn217%22%20AND%20a:%22MyUtilities%22)
