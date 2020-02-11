@@ -1,2 +1,1 @@
-https://img.shields.io/badge/version-1.0.1-blue
-
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.mbn217/utilities/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.mbn217/utilities)
